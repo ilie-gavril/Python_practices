@@ -11,7 +11,7 @@ print("Ce exercitiu vrei sa rulezi?\n EX1 - scrie ex1\n EX2 - scrie ex2\n EX3 - 
 to_run = input("Introdu excercitiul aici:")
 
 if to_run == "ex1":
-  print(ex1.citeste_intreg_pozitiv())
+  ex1.citeste_intreg_pozitiv()
 if to_run == "ex2":
   print("Valoarea primei puteri peste cand baza este 3 si limita 0:", ex2.prima_putere_peste(3,0))
   print("Valoarea primei puteri peste cand baza este 3 si limita 0:", ex2.prima_putere_peste(2,1020))
