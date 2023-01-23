@@ -9,7 +9,6 @@ import ex5
 print("Ce exercitiu vrei sa rulezi?\n EX1 - scrie ex1\n EX2 - scrie ex2\n EX3 - scrie ex3\n EX4 - scrie ex4\n EX5 - scrie ex5 \nDaca nu scrii nimic programul va lua sfarsit!!")
 
 to_run = input("Introdu excercitiul aici:")
-
 if to_run == "ex1":
   ex1.citeste_intreg_pozitiv()
 if to_run == "ex2":
@@ -18,11 +17,11 @@ if to_run == "ex2":
   print("Valoarea primei puteri peste cand baza este 2 si limita 1025:", ex2.prima_putere_peste(2,1025))
   print("Valoarea primei puteri peste cand baza este 7 si limita 10000:", ex2.prima_putere_peste(7,10000))
 if to_run == "ex3":
-# simulare(1000, 10, 1500)
-# simulare(1000, 10, 1500)
+  ex3.simulare(1000, 10, 1500)
+  ex3.simulare(1000, 10, 1500)
   ex3.simulare(1000, 8, 3600)
-# simulare(1000, 0.5, 1500)
-# simulare(1000, 10, 900)
+  ex3.simulare(1000, 0.5, 1500)
+  ex3.simulare(1000, 10, 900)
 if to_run == "ex4":
   print("A.")
   print(ex4.contine('abcde', 'b'))
