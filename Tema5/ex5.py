@@ -7,7 +7,6 @@ def incepe_cu(text, litera):
       return True
   else:
       return False
-  return False
   
 def termina_cu(text, litera):
   text = str(text.casefold())
@@ -16,7 +15,6 @@ def termina_cu(text, litera):
     return True
   else:
     return False
-  return False
 
 def afiseaza_cuvintele_cu(prima_litera, ultima_litera):
   fisier = open("Tema5/data/words_ro.txt", "r")
