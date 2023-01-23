@@ -9,7 +9,7 @@ def capete(text):
 
 def fara_capete(text):
     if len(text) < 3:
-        return ''
+        return text
     text_final = text.lstrip(text[0]).rstrip(text[-1]) 
     return text_final
 print(fara_capete(t))
