@@ -16,7 +16,7 @@ def gasire_duplicate(lista_cuvinte):
             if lista_cuvinte[i] in cuvant_de_comparat:
                 duplicat = lista_cuvinte[i]
                 pozitie.append(i)
-                for x in range(0, (len(lista_cuvinte) - i)):
+                for x in range(0,len(lista_cuvinte)):
                     if lista_cuvinte[x] == duplicat:
                         pozitie.append(x)
                         pozitie.reverse()
