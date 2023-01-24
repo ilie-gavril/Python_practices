@@ -1,5 +1,3 @@
-import os
-
 def incepe_cu(text, litera):
   text = str(text.casefold())
   litera = str(litera)
