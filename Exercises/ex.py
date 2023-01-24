@@ -31,5 +31,3 @@ start = 1
 stop = 10
 pas = 3
 x = start
-while x < stop:
-    
