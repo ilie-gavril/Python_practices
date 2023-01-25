@@ -1,5 +1,3 @@
-# lista = ["ana", "andreea", "sternocleidomastoidian", "ilie"]
-
 def cel_mai_lung(lista_cuvinte):
     cuvant = lista_cuvinte[0]
     if len(lista_cuvinte) == 0:
@@ -33,3 +31,23 @@ def cel_mai_lung_din_fisier():
 
 cuvant = cel_mai_lung_din_fisier()
 print(f'Cel mai lung din fisier: {cuvant} ({len(cuvant)} litere)')
+
+def cele_mai_lungi_din_fisier():
+    fisier = open("Tema6/data/words_ro.txt", "r")
+    lista = []
+    cele_mai_lungi = []
+    for x in fisier:
+        x = x.strip()
+        lista.append(x)
+    cuvant = lista[0]
+    for x in range(0, len(lista)):
+        if len(lista[x]) == len(cuvant):
+            cuvant = lista[x]
+            cele_mai_lungi.append(cuvant)
+        if len(lista[x]) > len(cuvant):
+            cuvant = lista[x]
+            cele_mai_lungi = []
+            cele_mai_lungi.append(cuvant)
+    return cele_mai_lungi
+
+print('Cele mai lungi din fisier:', cele_mai_lungi_din_fisier()) 
