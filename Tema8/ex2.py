@@ -33,7 +33,7 @@ def cifrare_fisier(nume_fisier, deplasament):
    criptare = []
    for x in continut_fisier:
     criptare.append(cifreaza(x.strip(), deplasament))
-   fisier_exportat = open("tema8/files/mesaj.txt_encoded", "w")
+   fisier_exportat = open("tema8/criptare/mesaj.txt_encoded", "w")
    for x in criptare:
     cuvinte_exportate = x + "\n"
     fisier_exportat.write(cuvinte_exportate) 
@@ -43,17 +43,17 @@ def descifrare_fisier(nume_fisier, deplasament):
    decriptare = []
    for x in continut_fisier:
     decriptare.append(descifreaza(x.strip(), deplasament))
-   fisier_exportat = open("tema8/files/mesaj.txt_encoded_decoded", "w")
+   fisier_exportat = open("tema8/criptare/mesaj.txt_encoded_decoded", "w")
    for x in decriptare:
     cuvinte_exportate = x + "\n"
     fisier_exportat.write(cuvinte_exportate) 
 
 
-fisier_initial = open("tema8/files/mesaj.txt", "r")
-fisier_criptat = open("tema8/files/mesaj.txt_encoded", "r")
+fisier_initial = open("tema8/criptare/mesaj.txt", "r")
+fisier_criptat = open("tema8/criptare/mesaj.txt_encoded", "r")
 
-cifrare_fisier(fisier_initial, 3)
-descifrare_fisier(fisier_criptat, 3)
+cifrare_fisier(fisier_initial, 5)
+descifrare_fisier(fisier_criptat, 5)
 
 fisier_initial.close()
 fisier_criptat.close()
