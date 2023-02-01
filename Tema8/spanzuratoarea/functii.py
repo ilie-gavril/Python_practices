@@ -112,6 +112,17 @@ def demascare_cuvant(cuvant):
             print("Felicitari! Ai ghicit cuvantul ascuns!")
             break;
 
+def numar_nivel():
+    input_nivel = input("Scrie aici > ")
+    while type(input_nivel) == str:
+        try:
+            input_nivel = int(input_nivel)
+            return input_nivel
+        except ValueError:
+            input_nivel = 0
+            print("Nu ai introdus un numar valid!")
+        
+
 def alege_nivel(numar):
     match numar:
         case 1:
@@ -151,7 +162,7 @@ def alege_nivel(numar):
             for x in lista_cuvinte:
                 lista_finala.append(x.split())
             fisier_cuvinte.close()
-            print("Nu ati ales niciun nivel de dificultate! Veti primi un cunvant aleator!")
+            print("Nu ati ales niciun nivel de dificultate! Veti juca la un nivel aleator!")
             return lista_finala
 
     
