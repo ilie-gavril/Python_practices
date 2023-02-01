@@ -93,9 +93,7 @@ def demascare_cuvant(cuvant):
     print(*cuvant_demascat)
     while incercari > 0:
         litera = input("Introdu o litera: ")
-        litere_incercate = []
         for x in range(1, len(litere_cuvant)-1):
-            litere_incercate.a
             if litera == litere_cuvant[x]:
                 cuvant_demascat[x] = litera
                 print(*cuvant_demascat)
